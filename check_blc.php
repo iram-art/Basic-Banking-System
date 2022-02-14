@@ -119,7 +119,7 @@ if(!$conn){
 }else{
 
 if($_SERVER['REQUEST_METHOD']== 'POST'){
-    $accno = $_POST['Account_NO'];
+    $accno = $_POST['Account_No'];
     
     $sql = "SELECT Balance FROM users where Account_No='$accno'";
     $result = mysqli_query($conn, $sql);
